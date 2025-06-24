@@ -8,4 +8,4 @@ aprobados = int(input("Ingrese la cantidad de estudiantes que aprobaron: "))
 
 porcentaje_aprobados = calcular_porcentaje_aprobados(total, aprobados)
 
-print(f"✅ El porcentaje de aprobación es: {porcentaje_aprobados:.2f}%")
+print(f"El porcentaje de aprobación es: {porcentaje_aprobados:.2f}%")
