@@ -1,0 +1,19 @@
+# Crear una lista vacía para guardar las notas
+notas = []
+num_estudiantes=12
+
+# Ingresar 12 notas
+for i in range(12):
+    nota = float(input("Ingrese la nota del estudiante " + str(i + 1) + ": "))
+    notas.append(nota)
+
+# Calcular la suma total de las notas
+suma = 0
+for nota in notas:
+    suma += nota
+
+# Calcular el promedio
+promedio = suma / num_estudiantes
+
+# Mostrar resultado
+print("El promedio del grupo es:", round(promedio, 2))

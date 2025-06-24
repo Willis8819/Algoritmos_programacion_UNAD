@@ -1,0 +1,16 @@
+IVA = 0.19  # 19% de IVA
+continuar = "s"
+contador = 1
+
+while continuar == "s":
+    cantidad = int(input(f"\nIngrese la cantidad del producto {contador}: "))
+    valor_unitario = float(input("Ingrese el valor unitario del producto: "))
+        
+    subtotal = cantidad * valor_unitario
+    total_con_iva = subtotal * (1 + IVA)
+
+    print(f"Valor total a pagar con IVA: ${total_con_iva:.2f}")
+        
+    continuar = input("¿Desea registrar otro producto? (s/n): ").strip().lower()
+    contador += 1
+    

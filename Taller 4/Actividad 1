@@ -1,0 +1,31 @@
+# Inicialización de contadores
+dias_heladas = 0
+dias_proximas = 0
+dias_sin_heladas = 0
+suma_temperaturas = 0
+total_dias = 20
+
+# Recolección de temperaturas durante 20 días
+for dia in range(1, 21):
+    temperatura = float(input(f"Ingrese la temperatura del día {dia}: "))
+    if temperatura <= 6:
+        print("→ Temporada de Heladas")
+        dias_heladas += 1
+    elif 6 < temperatura <= 11:
+        print("→ Temporada próxima a heladas")
+        dias_proximas += 1
+    else:
+        print("→ No hay temporada de heladas")
+        dias_sin_heladas += 1
+
+    suma_temperaturas += temperatura
+
+# Cálculo del promedio
+promedio = suma_temperaturas / total_dias
+
+# Resultados finales
+print("\n Resumen del estudio:")
+print(f"Días con heladas (≤6°C): {dias_heladas}")
+print(f"Días próximos a heladas (7–11°C): {dias_proximas}")
+print(f"Días sin heladas (>11°C): {dias_sin_heladas}")
+print(f"Promedio de temperatura: {promedio:.2f}°C")

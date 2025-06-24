@@ -1,0 +1,11 @@
+def calcular_porcentaje_aprobados(total_estudiantes, aprobados):
+    porcentaje = (aprobados / total_estudiantes) * 100
+    return porcentaje
+
+# Ejemplo de uso
+total = int(input("Ingrese el número total de estudiantes: "))
+aprobados = int(input("Ingrese la cantidad de estudiantes que aprobaron: "))
+
+porcentaje_aprobados = calcular_porcentaje_aprobados(total, aprobados)
+
+print(f"✅ El porcentaje de aprobación es: {porcentaje_aprobados:.2f}%")
